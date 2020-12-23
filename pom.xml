@@ -29,11 +29,17 @@
         </dependency>
 	</dependencies>
 	<repositories>
-		<repository>
-			<id>central</id>
-			<name>Nexus aliyun</name>
-			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
-		</repository>
+		<repository>  
+            <id>alimaven</id>  
+            <name>aliyun maven</name>  
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>  
+            <releases>  
+                <enabled>true</enabled>  
+            </releases>  
+            <snapshots>  
+                <enabled>false</enabled>  
+            </snapshots>  
+        </repository> 
 	</repositories>
 	<properties>
 		<docker.image.prefix>springboot</docker.image.prefix>
